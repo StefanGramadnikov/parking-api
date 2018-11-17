@@ -44,9 +44,6 @@ class ParkingService
      */
     public function getAmountForStay(Vehicle $vehicle)
     {
-        date_default_timezone_set('Europe/Sofia');
-
-
         //Registered at and Left at Dates
         $registeredAt = $vehicle->created_at;
         $leftAt = Carbon::now();
